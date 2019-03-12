@@ -1,0 +1,55 @@
+.single-pay-card .el-card__body {
+  padding-top: 50px;
+}
+.inAccountInfo, .outAccountInfo {
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.single-pay-card .el-form-item {
+  margin-bottom: 20px;
+}
+.address .el-form-item__label:before {
+  content: '*';
+  color: #fa5555;
+  margin-right: 4px;
+}
+.money .el-form-item__label:before {
+  content: '*';
+  color: #fa5555;
+  margin-right: 4px;
+}
+.amount input {
+  font-weight: 700;
+}
+.card-name .el-form-item__content {
+  display: flex;
+  justify-content: space-around;
+}
+.write-card-name {
+  flex: 4;
+}
+.single_pay_submit_btn {
+  width: 100px;
+}
+.chose-from-list {
+  margin-left: 10px;
+  flex: 1;
+}
+.address .el-form-item__content {
+  display: flex;
+}
+.province, .city {
+  flex: 2;
+}
+.city {
+  margin-left: 10px;
+}
+.single-pay-card .el-row {
+  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+.single-pay-card .el-col {
+  max-width: 500px;
+}
+

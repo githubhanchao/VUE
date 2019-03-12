@@ -1,0 +1,31 @@
+#!/bin/bash
+
+
+set -e
+
+
+echo ===================
+echo "node -v"
+node -v
+
+
+echo ------------------------------
+echo 'install client package......'
+yarn install
+echo ------------------------------
+
+
+echo ------------------------------
+echo 'run client test......'
+#npm run unit
+
+# run all client tests
+#npm test
+echo ------------------------------
+
+
+echo ------------------------------
+echo 'run build client.....'
+yarn run build
+echo ------------------------------
+echo 'build client success'

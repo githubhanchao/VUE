@@ -1,0 +1,31 @@
+/*login page*/
+.theme-login-content {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/login-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.theme-login-body {
+
+}
+
+.theme-login-panel-container {
+  width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+/*home page*/
+.theme-home-header {
+  background-color: #fff;
+}
+.theme-home-left-nav {
+  background-color: #fff;
+}
+

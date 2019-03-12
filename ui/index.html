@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--<meta http-equiv="Expires" content="0">-->
+    <!--<meta http-equiv="Pragma" content="no-cache">-->
+    <!--<meta http-equiv="Cache-control" content="no-cache">-->
+    <!--<meta http-equiv="Cache" content="no-cache">-->
+    <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon"/>
+    <link href="static/layui/css/layui.css" rel="stylesheet">
+    <link href="static/css/common.css" rel="stylesheet">
+    <script src="static/layui/layui.all.js"></script>
+    <script src="static/layui/lay/other_modules/autocomplete.js"></script>
+    <script>
+      // layui.use('layer', function(){});
+      // layui.use('laydate', function(){});
+      // layui.use('form', function(){});
+      // window.host = 'http://172.17.186.157:7010';
+      window.host = 'http://172.17.186.172:7010';
+      layui.config({
+        base: 'static/layui/lay/other_modules/'
+      }).extend({
+        common:'autocomplete'
+      });
+      layui.use('autocomplete', function(){});
+      // layui.use('upload', function(){});
+      // layui.use('element', function(){});
+      layui.jquery.ajaxSetup({
+        dataType: "json",
+        cache: false,
+        xhrFields: {
+          withCredentials: true
+        },
+        complete: function(xhr) {
+          if(xhr.responseJSON.retCode == -106){
+            window.location.href = "index.html";
+          }
+        }
+      });
+    </script>
+
+    <title>patent-management-system-ui</title>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
